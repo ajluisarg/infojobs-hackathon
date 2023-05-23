@@ -163,7 +163,10 @@ export const OfferList = () => {
 
     if (side === 'right')
       (offers?.[index] as any).id &&
-        storeData(OFFERS_KEY, [...(getData(OFFERS_KEY) ?? []), offers?.[index]])
+        storeData(OFFERS_KEY, [
+          ...(getData<ReadonlyArray<OfferExtended>>(OFFERS_KEY) ?? []),
+          offers?.[index],
+        ])
   }
 
   return (
