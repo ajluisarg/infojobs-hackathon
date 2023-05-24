@@ -164,7 +164,7 @@ export const OfferList = () => {
     }
   }
 
-  if (currentOffer?.id && discartedOffers?.map(({ id }) => id).includes(currentOffer.id)) {
+  if (currentOffer?.id && [...(discartedOffers ?? []), ...(savedOffers ?? [])]?.map(({ id }) => id).includes(currentOffer.id)) {
     setIndex((prevIndex) => prevIndex + 1)
   }
 
