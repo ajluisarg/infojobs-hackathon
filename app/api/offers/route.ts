@@ -10,7 +10,7 @@ const getCityImage = async (city: string): Promise<string> => {
     madrid: 'https://tse3.mm.bing.net/th?id=OIP.xh2nK3gWxr40rJp_GhTy4QHaE8&pid=Api',
     alava: 'https://tse4.mm.bing.net/th?id=OIP.yli2WAaz5ndh89nTbQPLqgHaE7&pid=Api',
     valencia: 'https://tse3.mm.bing.net/th?id=OIP.iVLXBkfz3yqMwSmm28ID0gHaE8&pid=Api',
-    sabadel: 'https://tse3.mm.bing.net/th?id=OIP.K4UfSistqqf5fCm3d3JpFAHaDt&pid=Api',
+    sabadel: 'https://tse4.mm.bing.net/th?id=OIP.Qxl5KSaNn98z0OHY6y6RRwEsC0&pid=Api',
     cadiz: 'https://tse4.mm.bing.net/th?id=OIP.o28f8aWRF8wkbuaomIwMhwHaE8&pid=Api',
     santander: 'https://tse1.mm.bing.net/th?id=OIP.EFDlzaxFwgI6imPqNYgcvwHaEN&pid=Api',
     bilbao: 'https://tse1.mm.bing.net/th?id=OIP.qoXQPm_DFROplBv19YVwUQHaEz&pid=Api',
