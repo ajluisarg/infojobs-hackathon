@@ -56,11 +56,9 @@ export const Offer = ({ offer, actions }: Props) => {
     <>
       <Card className="w-[340px]">
         <CardHeader>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col">
             <Flex>
-              {detail.profile.logoUrl && (
-                <Avatar mr={3} src={detail.profile.logoUrl} />
-              )}
+              {detail.profile.logoUrl && <Avatar mr={3} src={detail.profile.logoUrl} />}
               <Box>
                 <Text fontWeight="bold">{summarize(offer.title, 50)}</Text>
                 <Badge fontSize={10} colorScheme="green">
@@ -71,15 +69,9 @@ export const Offer = ({ offer, actions }: Props) => {
           </div>
         </CardHeader>
         <CardBody className="pt-0">
-          <div className="flex flex-col justify-between h-full">
+          <div className="flex flex-col justify-between h-full gap-2">
             <div className="flex flex-col gap-2 overflow-hidden">
-              {offer.cityImage && (
-                <Image
-                  src={offer.cityImage}
-                  alt="Offer city image"
-                  borderRadius="lg"
-                />
-              )}
+              {offer.cityImage && <Image src={offer.cityImage} alt="Offer city image" borderRadius="lg" className="pointer-events-none" />}
               <div className="flex flex-wrap justify-between">
                 <Badge className="flex max-w-fit">{detail.profile.name}</Badge>
                 <Badge className="flex max-w-fit">
@@ -118,23 +110,13 @@ export const Offer = ({ offer, actions }: Props) => {
                     <IconBusinessplan size={15} />
                   </Text>
                   {offer.salaryMin.value && (
-                    <Badge
-                      className="flex items-center"
-                      fontSize={10}
-                      variant="outline"
-                      colorScheme="gray"
-                    >
+                    <Badge className="flex items-center" fontSize={10} variant="outline" colorScheme="gray">
                       {'> '}
                       {offer.salaryMin.value}
                     </Badge>
                   )}
                   {offer.salaryMax.value && (
-                    <Badge
-                      className="flex items-center"
-                      fontSize={10}
-                      variant="outline"
-                      colorScheme="green"
-                    >
+                    <Badge className="flex items-center" fontSize={10} variant="outline" colorScheme="green">
                       {'< '}
                       {offer.salaryMax.value}
                     </Badge>
