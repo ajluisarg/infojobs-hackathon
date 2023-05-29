@@ -1,4 +1,30 @@
+## The Project
+
+### Business login
+
+With this application, the user can add an offer to favorites or discard it by sliding the card with his finger. This provides an easy way to save and filter offers by offering useful information in a fun way.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### Third parties
+
+#### REST APIs
+
+- Infojobs
+
+```bash
+GET /offer (get offer list)
+GET /offer/{id} (get offer detail)
+GET /offer/{id} (get offer detail)
+GET /dictionary/{dictionaryId} (get provinces and categories)
+```
+
+- Rapid API
+
+```bash
+GET /images/details (get image from bing search)
+
+```
 
 ## Getting Started
 
@@ -18,8 +44,12 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## The Project
+### Environment variables
 
-### Business login
+Create `.env.local` file with your own environment variables
 
-With this application, the user can add an offer to favorites or discard it by sliding the card with his finger. This provides an easy way to save and filter offers by offering useful information in a fun way.
+```bash
+INFOJOBS_CLIENT_SECRET=XXX
+INFOJOBS_CLIENT_ID=XXX
+RAPIDAPI_KEY=XXX
+```

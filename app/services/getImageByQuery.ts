@@ -1,7 +1,9 @@
+const SECRET_KEY = process.env.RAPIDAPI_KEY ?? ''
+
 const url = 'https://bing-image-search1.p.rapidapi.com/images/search?'
 const options = {
   headers: {
-    'X-RapidAPI-Key': '19e2b2e38bmsh0be9fe1e73f4c46p132fc7jsneb01ccdea2d7',
+    'X-RapidAPI-Key': SECRET_KEY,
     'X-RapidAPI-Host': 'bing-image-search1.p.rapidapi.com',
     'Content-Type': 'application/json',
   },
